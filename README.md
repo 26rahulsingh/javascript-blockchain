@@ -9,38 +9,66 @@ This app is small blockchain working mechanism implemented in JavaScript.
 * run `node blockchain.js`
 
 ### Sample Output ###
+---
+```
+Mining block 1...
+BLOCK MINED: 00000f9e622fd5a9838ca3346aa4ff1ca31d73d99fa70089c4bce8a876f8ad53
+
+Mining block 2...
+BLOCK MINED: 00000d79a5523cd31185fc516fd5d657b33341095e851bd8d2761a37b6a16f79
+
+Blockchain valid? true
+Try changing a block...
+Blockchain valid? false
+```
+
+##### Chain output #####
+---
 ```javascript
 {
     "chain": [
         {
-            "previousHash": "0",
-            "timestamp": 1586404499611,
+            "index": 0,
+            "timestamp": 1586408546722,
             "data": "Genesis block",
-            "hash": "c74ce669645a31b260d801b49f407c7d4c4c4190b91cb0ef11d06e4ef305dd08"
+            "previousHash": "0",
+            "hash": "c51c9f24ff82a7b4462833a10ad665f2838ab139c2a4b03b3d161dfc8f33d5e8",
+            "nonce": 0
         },
         {
-            "previousHash": "c74ce669645a31b260d801b49f407c7d4c4c4190b91cb0ef11d06e4ef305dd08",
-            "timestamp": 1586404499614,
+            "index": 1,
+            "timestamp": 1586408546731,
             "data": {
-                "amount": 4
+                "amount": 100
             },
-            "hash": "6b1daca0d52033b0cd717b75a07a1b96fdd8bb9666ec45821a11b676158e5eed"
+            "previousHash": "c51c9f24ff82a7b4462833a10ad665f2838ab139c2a4b03b3d161dfc8f33d5e8",
+            "hash": "f9e594e358fc9764c891f2bf0667290fc2fb48162ab13304c0ccc82a5a3f5ac1",
+            "nonce": 364339
         },
         {
-            "previousHash": "6b1daca0d52033b0cd717b75a07a1b96fdd8bb9666ec45821a11b676158e5eed",
-            "timestamp": 1586404499615,
+            "index": 2,
+            "timestamp": 1586408550420,
             "data": {
-                "amount": 5
+                "amount": 6
             },
-            "hash": "174e551d7721c796ebbfd5eeffc5837fe636901ab0dbca4683b8a942c2bc0ecf"
+            "previousHash": "00000f9e622fd5a9838ca3346aa4ff1ca31d73d99fa70089c4bce8a876f8ad53",
+            "hash": "00000d79a5523cd31185fc516fd5d657b33341095e851bd8d2761a37b6a16f79",
+            "nonce": 1471777
         }
-    ]
-}
-getLastBlock:  Block {
-  previousHash: '6b1daca0d52033b0cd717b75a07a1b96fdd8bb9666ec45821a11b676158e5eed',
-  timestamp: 1586404499615,
-  data: { amount: 5 },
-  hash: '174e551d7721c796ebbfd5eeffc5837fe636901ab0dbca4683b8a942c2bc0ecf'
+    ],
+    "difficulty": 5
 }
 ```
 
+##### Latest block #####
+---
+```javascript
+{
+  index: 2,
+  timestamp: 1586408550420,
+  data: { amount: 6 },
+  previousHash: '00000f9e622fd5a9838ca3346aa4ff1ca31d73d99fa70089c4bce8a876f8ad53',
+  hash: '00000d79a5523cd31185fc516fd5d657b33341095e851bd8d2761a37b6a16f79',
+  nonce: 1471777
+}
+```
