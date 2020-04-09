@@ -1,0 +1,26 @@
+{
+  "name": "javascript-blockchain-sample",
+  "version": "1.0.0",
+  "description": "this is demo app of how we can implement simple blockchain in javascript.",
+  "main": "block.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/26rahulsingh/javascript-blockchain.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "JavaScript"
+  ],
+  "author": "Rahul Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/26rahulsingh/javascript-blockchain/issues"
+  },
+  "homepage": "https://github.com/26rahulsingh/javascript-blockchain#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
