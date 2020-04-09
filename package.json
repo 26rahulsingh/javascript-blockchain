@@ -2,8 +2,9 @@
   "name": "javascript-blockchain-sample",
   "version": "1.0.0",
   "description": "this is demo app of how we can implement simple blockchain in javascript.",
-  "main": "block.js",
+  "main": "blockchain.js",
   "scripts": {
+    "start": "node blockchain.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,6 @@
   },
   "homepage": "https://github.com/26rahulsingh/javascript-blockchain#readme",
   "dependencies": {
-    "crypto-js": "^4.0.0"
+    "crypto-js": "~4.0.0"
   }
 }
